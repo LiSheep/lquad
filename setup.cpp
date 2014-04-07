@@ -4,7 +4,7 @@
 #include"define.h"
 
 void setup_init(){
-	Serial.begin(115200);
+	Serial.begin(9600);
 
 	#ifdef PROMICRO
 	//pinMode(3,OUTPUT);

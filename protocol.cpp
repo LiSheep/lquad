@@ -52,11 +52,11 @@ extern uint8_t protocol_readData(uint8_t **_data){
                   return PROTOCOL_FAILD;
                 }
 	uint8_t sum = Serial.read(); 	//校验和
-	if(sum != sumCalc){
-		free(*_data); Serial.print("free");
-		*_data = NULL;		//校验失败
-		return PROTOCOL_FAILD;
-	}
+//	if(sum != sumCalc){
+//		free(*_data); 
+//		*_data = NULL;		//校验失败
+//		return PROTOCOL_FAILD;
+//	}
 	return type;
 }
 

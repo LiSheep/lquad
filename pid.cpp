@@ -35,7 +35,6 @@ extern void PID_init(double rollP, double rollI, double rollD, double pitchP, do
 extern void PID_compute(){
 	bool a = pidRoll->Compute();
 	bool b = pidPitch->Compute();
-//Serial.println(a);
 }
 
 extern void PID_toControl(Control *ctrl){
